@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>warning</title>
+    <!--boostrap cdn link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+     <!--boostrap cdn link-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header" class="container-fluid">
+        <div>
+            <h1>Warning</h1>
+        </div>
+    </section>
+
+    <section id="common" class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="column col-md-4">
+                <form action="/warning/<%=id_number %>" method="post">
+                    <div><strong>First name :</strong> <%=name %></div>
+                    <div><strong>Last name :</strong> <%= surname %></div>
+                    <div><strong>Id :</strong> <%= id_number %></div>
+                    <button class="hero-btn" type="submit" name="button">START</button>
+                </form>
+            </div>
+
+            <div class="note col-md-4">
+                <div><strong style="color: red;">Warning:</strong> you are not allowed to click chrome's <em>"<" ">"</em>
+                     buttons, please make sure you use only <strong>next</strong> button, otherwise you will fail
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer" class="container-fluid">
+
+        <div class="row align-items-center">
+
+            <div class="col-md-4 brand">
+
+                <h3>Follow us</h3>
+                <div class="icons">
+                    <a href="#" class="fab fa-facebook-square"></a>
+                    <a href="#" class="fab fa-twitter-square"></a>
+                    <a href="#" class="fab fa-instagram-square"></a>
+                    <a href="#" class="fab fa-pinterest-square"></a>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 footer-links">
+                <h3>Address:</h3>
+                <p>ashgabat, koshi, taslama</p>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

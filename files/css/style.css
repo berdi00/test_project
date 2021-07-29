@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.smb_form {
+    margin: 2rem 0 2rem 0;
+}
+
+.sub-header{
+    height: 30vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)),url(../images/img.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.sub-header h1{
+    color:#fff;
+    padding-top: 4rem;
+    font-size: 4rem;
+}
+
+#register{
+    min-height: 30vh;
+    width: 100vw;
+    margin: 2rem auto;
+}
+
+form {
+    text-align: center;
+    background: #cedceb;
+    padding: 1rem 0 1rem 0;
+    margin: auto 1rem;
+    border-radius: 1rem;
+}
+
+.inputBox {
+    position: relative;
+    text-align: center;
+}
+
+.inputBox input{
+    outline: none;
+    border: .2rem solid #333;
+    border-radius: .2rem;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    background: none;
+    height: 3rem;
+    width:70%;
+}
+
+#register form .inputBox input:valid ~ h3, #register form .inputBox:focus ~ h3,
+#register form .inputBox input:focus ~ h3,
+#register form .inputBox:valid ~ h3 {
+    font-size: 1.3rem;
+    left: 17%;
+    top: -.7rem;
+    color: #ff3300;
+}
+
+.inputBox h3{
+    position: absolute;
+    top: 1.5rem; left: 17%;
+    font-size: 1.3rem;
+}
+
+/* Button function */
+input[type="submit"] {
+    display: block;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 2.5rem;
+    width: 8rem;
+    margin: 1rem auto;
+    background: #333;
+    color: #fff;
+}
+
+input[type="submit"]:hover {
+    color: #333;
+    background: #FFF200;
+}
+
+#footer{
+    background: #333;
+}
+
+
+.brand{
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+
+#footer h3{
+    font-size: 1rem;
+    color: #FFF200;
+}
+
+.brand .icons a{
+    font-size: 1.5rem;
+    margin: 1rem 1rem;
+    color: #fff;
+}
+
+  .brand .icons a:hover{
+    color:#FFF200;
+}
+
+.footer-links{
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    margin: 1rem 0;
+}
+.footer-links p{
+    color: #fff;
+}
+
+
+/* all_users section starts */
+
+#common{
+    min-height: 30vh;
+    width: 100vw;
+    margin: 2rem auto;
+}
+
+table {
+    background-color: aliceblue;
+    text-transform: capitalize;
+}
+
+table tr{
+    text-align: center;
+}
+
+.dova {
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    border-radius: 5rem;
+    background: white;
+    font-size: 0.7rem;
+    margin-left: 1rem;
+    padding: 0.2rem 0.4rem;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+}
+
+.dova:hover {
+    background: #FFF200;
+    transition: 0.5s;
+}
+
+.hero-btn {
+    outline: none;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 0.5rem/*< top and bottom*/ 1rem;
+    margin: 1rem auto;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 1;
+    background: #333;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    color: #333;
+    background: #FFF200;
+    transition: 0.5s;
+/* all_users section ends */
+
+/* warning section starts */
+
+.column {
+    background-color: aliceblue;
+}
+.column div {
+    margin: 1.5rem 1rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.note {
+    margin-left: 2rem;
+}
+
+.note div {
+    font-size: 1.4rem;
+}
+/* warning section ends */
+
+/* test section starts */
+
+#common p {
+    font-size: 1.5rem;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #0076ff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3), 0 7px 21px 0 rgba(0,0,0,0.20);
+}
+input[type="radio"]:checked + label {
+    background: #173459;
+    color: white;
+}
+/* test section ends */
+
+/* somebody section starts */
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + label {
+    background: #173459;
+    color: white;
+}
+
+input[type="checkbox"]:checked + #hezret {
+    background: red;
+    color: white;
+}
